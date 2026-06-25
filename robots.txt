@@ -1,0 +1,4 @@
+iUser-agent: *
+Allow: /
+Sitemap: https://where-is-waldo.online/sitemap.xml
+
