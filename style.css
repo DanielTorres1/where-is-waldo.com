@@ -483,6 +483,54 @@ a:hover {
   animation: pulse 2s ease-in-out infinite;
 }
 
+/* Image Gallery System */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  background: var(--waldo-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), opacity var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Custom 3-column layout for Wallpapers Gallery */
+#wallpaper-gallery .image-gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+  #wallpaper-gallery .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #wallpaper-gallery .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Filter Tabs Styling */
 .filter-container {
   display: flex;
