@@ -58,8 +58,19 @@
     </section>
 
     <main class="container">
-        <div class="content-section">
+        <div class="content-section" id="history">
             <h2>History &amp; Publications</h2>
+
+            <!-- Quick Navigation -->
+            <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 1.25rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                <h4 style="margin-top: 0; margin-bottom: 0.75rem; color: var(--waldo-blue); font-family: var(--font-heading);">⚡ Quick Navigation</h4>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                    <a href="#history" style="background: #3b82f6; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.3s ease;">📚 History &amp; Publications</a>
+                    <a href="#watch" style="background: #10b981; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.3s ease;">🎬 Watch Video</a>
+                    <a href="#categories" style="background: #8b5cf6; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.3s ease;">🔍 Explore Guides</a>
+                    <a href="#tips" style="background: #f59e0b; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.3s ease;">💡 Search Tips</a>
+                </div>
+            </div>
             <p><strong>Where's Waldo?</strong> (originally published as <em>Where's Wally?</em> in the United Kingdom)
                 is a world-famous series of children's puzzle books created by English illustrator Martin Handford in
                 1987. The <strong>where's waldo books</strong> are known for their intricate double-page spread
@@ -161,9 +172,15 @@
                     Handford continues to craft new adventures. His work is published globally under the Candlewick
                     Press imprint in the United States and Walker Books in the United Kingdom.</p>
             </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee; text-align: right;">
+                <span style="font-weight: 500;">Ready to watch? </span>
+                <a href="#watch" style="display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 600; color: var(--waldo-red); text-decoration: underline;">
+                    🎬 Jump to the Video Tutorial &rarr;
+                </a>
+            </div>
         </div>
 
-        <div class="content-section video-section">
+        <div class="content-section video-section" id="watch">
             <h2>🎬 Watch: The Fastest Way To Find Waldo</h2>
             <p>Check out our featured video tutorial highlighting the top tips, scanning patterns, and tricks to find Waldo quickly in any crowd scene.</p>
             <div class="video-container">
@@ -174,7 +191,7 @@
             </div>
         </div>
 
-        <div class="grid">
+        <div class="grid" id="categories">
             <a href="characters.html" class="card">
                 <div class="card-icon">👥</div>
                 <h3>Where's Waldo Characters</h3>
@@ -252,7 +269,7 @@
 
 
 
-        <div
+        <div id="tips"
             style="background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
             <h3>Tips for Finding Characters</h3>
             <ul>
