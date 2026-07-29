@@ -85,12 +85,13 @@
 
             <!-- Infographic Poster Image -->
             <div style="text-align: center; margin-bottom: 2.5rem;">
-                <picture>
+                <picture style="cursor: pointer; display: inline-block;" onclick="openModal('images/info.png', 'The Accidental Origin of Where\'s Wally? / Waldo Infographic')">
                     <source srcset="images/info.webp" type="image/webp">
                     <img src="images/info.png" alt="Where's Wally Origin Infographic Poster"
-                        style="width: 100%; max-width: 900px; height: auto; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.15);"
+                        style="width: 100%; max-width: 900px; height: auto; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.2s ease;"
                         loading="lazy">
                 </picture>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">🔍 <em>Tap image to expand &amp; view full screen</em></p>
             </div>
 
             <!-- Hero Quote Banner -->
